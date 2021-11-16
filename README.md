@@ -5,7 +5,7 @@ This apps uses Room and SQLiteHelper for database.
 
 
 <div>
-<img src="https://github.com/AnthoniIP/CRUD-application/blob/master/screenshots/Screenshot_1637093048.png" alt="drawing" width="400"/> <img src="https://github.com/AnthoniIP/CRUD-application/blob/master/screenshots/Screenshot_1637093043.png" alt="drawing" width="400"/>
+<img src="https://github.com/AnthoniIP/CRUD-application/blob/master/screenshots/Screenshot_1637093043.png" alt="drawing" width="400"/>   <img src="https://github.com/AnthoniIP/CRUD-application/blob/master/screenshots/Screenshot_1637093048.png" alt="drawing" width="400"/> 
 </div>
 
 ## Changing between Room and SQLiteHelper
