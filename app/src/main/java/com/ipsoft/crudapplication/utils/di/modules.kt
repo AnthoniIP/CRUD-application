@@ -13,10 +13,15 @@ import org.koin.dsl.module
 
 val appModule = module {
 
-    //single<TaskRepository> { TaskRepositoryRoom(androidApplication()) }
+    //This apps uses room and SQLiteHelper for database.
+
+    //If you wish change beetween then,
+    // just uncomment a TaskRepository above and comment another
+
+    single<TaskRepository> { TaskRepositoryRoom(androidApplication()) }
+    //single<TaskRepository> { TaskRepositorySQLite(get()) }
     single { TaskSQLiteHelper(androidContext()) }
     single { TaskRepositorySQLite(get()) }
-    single<TaskRepository> { TaskRepositorySQLite(get()) }
     viewModel { MainViewModel(repository = get()) }
     viewModel { NewTaskViewModel(repository = get()) }
 
