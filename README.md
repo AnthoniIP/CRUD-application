@@ -1,14 +1,14 @@
 # CRUD application
 
-This apps uses room and SQLiteHelper for database. 
+This apps uses Room and SQLiteHelper for database. 
 
 
 
 <div>
-<img src="https://github.com/AnthoniIP/CRUD-application/blob/master/screenshots/Screenshot_1637093048.png" alt="drawing" width="400"/><img src="https://github.com/AnthoniIP/CRUD-application/blob/master/screenshots/Screenshot_1637093043.png" alt="drawing" width="400"/>
+<img src="https://github.com/AnthoniIP/CRUD-application/blob/master/screenshots/Screenshot_1637093048.png" alt="drawing" width="400"/> <img src="https://github.com/AnthoniIP/CRUD-application/blob/master/screenshots/Screenshot_1637093043.png" alt="drawing" width="400"/>
 </div>
 
-##Charging between Room and SQLiteHelper
+## Changing between Room and SQLiteHelper
 
 If you wish change between then, just change the Build Variant between Room and SQLiteHelper builds in android studio.
 
