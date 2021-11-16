@@ -16,12 +16,27 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
     }
 
     buildTypes {
-        release {
-            minifyEnabled false
+        room {
+            debuggable = true
+            minifyEnabled true
+            applicationIdSuffix ".room"
+            versionNameSuffix "room"
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("Boolean", "ROOM", "true")
+            resValue "string", "app_name", "CRUD App - Room"
+        }
+        SQLiteHelper {
+            debuggable = true
+            minifyEnabled true
+            applicationIdSuffix ".sqlite"
+            versionNameSuffix "sqlite"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("Boolean", "ROOM", "false")
+            resValue "string", "app_name", "CRUD App - SQliteHelper"
         }
     }
     compileOptions {
@@ -66,7 +81,7 @@ dependencies {
     //Room
     def room_version = "2.3.0" // check latest version from docs
     implementation "androidx.room:room-runtime:$room_version"
-    kapt "org.xerial:sqlite-jdbc:3.34.0"
+    kapt 'org.xerial:sqlite-jdbc:3.36.0.3'
     kapt "androidx.room:room-compiler:$room_version"
 
 }

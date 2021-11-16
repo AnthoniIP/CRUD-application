@@ -1,12 +1,10 @@
-package ipsoft.lembretesetarefas.datasource.room
+package com.ipsoft.crudapplication.datasource.room
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.ipsoft.crudapplication.datasource.model.Task
-import com.ipsoft.crudapplication.datasource.room.DB_NAME
-import com.ipsoft.crudapplication.datasource.room.TaskDao
 
 @Database(entities = [Task::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {

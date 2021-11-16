@@ -2,7 +2,7 @@ package com.ipsoft.crudapplication.repository
 
 import android.content.Context
 import com.ipsoft.crudapplication.datasource.model.Task
-import ipsoft.lembretesetarefas.datasource.room.AppDatabase
+import com.ipsoft.crudapplication.datasource.room.AppDatabase
 
 class TaskRepositoryRoom(context: Context) : TaskRepository {
 
