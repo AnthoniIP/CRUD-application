@@ -1,25 +1,16 @@
 package com.ipsoft.crudapplication.repository
 
 import com.ipsoft.crudapplication.datasource.model.Task
+import com.ipsoft.crudapplication.datasource.sqlite.TaskSQLiteHelper
 
-class TaskRepositorySQLite: TaskRepository {
-    override suspend fun getAll(): List<Task> {
-        TODO("Not yet implemented")
-    }
+class TaskRepositorySQLite(private val dbHelper: TaskSQLiteHelper) : TaskRepository {
+    override suspend fun getAll(): List<Task> = dbHelper.getTasks()
 
-    override suspend fun insertAll(task: Task) {
-        TODO("Not yet implemented")
-    }
+    override suspend fun insertAll(task: Task) = dbHelper.insertTask(task)
 
-    override suspend fun loadById(id: Int): Task {
-        TODO("Not yet implemented")
-    }
+    override suspend fun loadById(id: Int): Task = dbHelper.getTaskById(id)
 
-    override suspend fun update(task: Task) {
-        TODO("Not yet implemented")
-    }
+    override suspend fun update(task: Task) = dbHelper.updateTask(task)
 
-    override suspend fun delete(task: Task) {
-        TODO("Not yet implemented")
-    }
+    override suspend fun delete(task: Task) = dbHelper.deleteTask(task)
 }
