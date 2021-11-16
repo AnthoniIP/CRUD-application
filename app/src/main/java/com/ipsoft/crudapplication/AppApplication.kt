@@ -1,7 +1,7 @@
 package com.ipsoft.crudapplication
 
 import android.app.Application
-import com.ipsoft.crudapplication.commons.di.appModule
+import com.ipsoft.crudapplication.utils.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
