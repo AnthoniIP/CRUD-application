@@ -1,12 +1,11 @@
 <resources>
-    <string name="create_task">Criar Tarefa</string>
     <string name="title">Titulo</string>
     <string name="description">Descrição(Opcional)</string>
     <string name="date">Data</string>
     <string name="time">Hora</string>
     <string name="cancel">Cancelar</string>
     <string name="delete">Deletar</string>
-    <string name="open_new_task_fragment">Open new Task fragment</string>
     <string name="tasks">Tarefas</string>
     <string name="task_edit">Editar tarefa</string>
+    <string name="create_task">Criar tarefa</string>
 </resources>

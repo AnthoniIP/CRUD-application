@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">Title</string>
+    <string name="description">Description(Optional)</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Detele</string>
+    <string name="tasks">Tasks</string>
+    <string name="task_edit">Edit tasks</string>
+    <string name="create_task">Create task</string>
+</resources>

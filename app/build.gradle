@@ -20,6 +20,15 @@ android {
     }
 
     buildTypes {
+        release {
+            resValue "string", "app_name", "CRUD App - Room"
+            buildConfigField("Boolean", "ROOM", "true")
+        }
+        debug{
+            resValue "string", "app_name", "CRUD App - SQliteHelper"
+            buildConfigField("Boolean", "ROOM", "false")
+
+        }
         room {
             debuggable = true
             minifyEnabled true
